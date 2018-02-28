@@ -11,6 +11,7 @@ class CurrencyList extends Component {
   static propTypes = {
     navigation: PropTypes.object,
   }
+  
   handlePress = () => {
     this.props.navigation.goBack(null);
   };
