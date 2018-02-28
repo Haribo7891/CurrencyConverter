@@ -34,7 +34,7 @@ class Home extends Component {
   render () {
     return (
       <Container>
-        <StatusBar translucent={false} barStyle="light-content" />
+        <StatusBar translucent={false} barStyle="default" />
         <Header 
           onPress={this.handleOptionsPress}
         />
