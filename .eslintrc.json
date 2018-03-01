@@ -16,8 +16,8 @@
 	},
 	"plugins": ["react"],
 	"rules": {
-		"no-unused-vars": ["warn"],
-		"no-undef": ["warn"],
+		"no-unused-vars": ["off"],
+		"no-undef": ["error"],
 		"no-case-declarations": ["error"],
 		"no-console": ["error"],
 		"no-useless-constructor": ["error"],
