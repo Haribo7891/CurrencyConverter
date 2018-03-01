@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { ScrollView, StatusBar, Platform } from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
+import { connect } from 'react-redux';
 
 import { ListItem, Seperator } from '../components/List';
+import { changePrimaryColor } from '../actions/theme';
 
 const styles = EStyleSheet.create({
   $blue: '$primaryBlue',
@@ -15,9 +17,11 @@ const styles = EStyleSheet.create({
 class Themes extends Component {
   static propTypes = {
     navigation: PropTypes.object,
+    dispatch: PropTypes.func,
   }
 
-  handleThemePress = (color) => {
+  handlePressTheme = (color) => {
+    this.props.dispatch(changePrimaryColor(color));
     this.props.navigation.goBack();
   }
 
@@ -28,7 +32,7 @@ class Themes extends Component {
         <Seperator />
         <ListItem
           text="Blue"
-          onPress={() => this.handleThemePress(styles.$blue)}
+          onPress={() => this.handlePressTheme(styles.$blue)}
           selected
           checkmark={false}
           iconBackground={styles.$blue}
@@ -36,7 +40,7 @@ class Themes extends Component {
         <Seperator />
         <ListItem
           text="Orange"
-          onPress={() => this.handleThemePress(styles.$orange)}
+          onPress={() => this.handlePressTheme(styles.$orange)}
           selected
           checkmark={false}
           iconBackground={styles.$orange}
@@ -44,7 +48,7 @@ class Themes extends Component {
         <Seperator />
         <ListItem
           text="Green"
-          onPress={() => this.handleThemePress(styles.$green)}
+          onPress={() => this.handlePressTheme(styles.$green)}
           selected
           checkmark={false}
           iconBackground={styles.$green}
@@ -52,7 +56,7 @@ class Themes extends Component {
         <Seperator />
         <ListItem
           text="Purple"
-          onPress={() => this.handleThemePress(styles.$purple)}
+          onPress={() => this.handlePressTheme(styles.$purple)}
           selected
           checkmark={false}
           iconBackground={styles.$purple}
@@ -63,4 +67,4 @@ class Themes extends Component {
   }
 }
 
-export default Themes;
+export default connect()(Themes);
