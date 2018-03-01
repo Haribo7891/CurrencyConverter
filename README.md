@@ -58,7 +58,7 @@ The following dependencies were used in the making of this project:
 * [Babel](https://babeljs.io/ "Babel.js Homepage") - Javascript compiler.
 * [Eslint](https://eslint.org "Eslint Homepage") - The pluggable linting utility for JavaScript and JSX.
 * [Moment](https://momentjs.com, "Moment.js Homepage") - Parse, validate, manipulate, and display dates and times in JavaScript.
-* [Redux-Saga] (https://redux-saga.js.org, "Redux-Saga Homepage") - An asynchronous middleware library.
+* [Redux-Saga](https://redux-saga.js.org, "Redux-Saga Homepage") - An asynchronous middleware library.
 
 ___
 
