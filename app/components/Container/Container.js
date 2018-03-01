@@ -11,7 +11,7 @@ const Container = ({ children, backgroundColor }) => {
   }
   return (
     <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
-      <View style={ styles.container }>
+      <View style={ containerStyles }>
         { children }
       </View>
     </TouchableWithoutFeedback>

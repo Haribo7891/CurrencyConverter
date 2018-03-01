@@ -1,6 +1,6 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import { View, Text, Image, TouchableOpacity } from 'react-native';
+import React from 'react';
+import { Text, TouchableOpacity, Image, View } from 'react-native';
 
 import styles from './styles';
 
@@ -14,8 +14,8 @@ const ClearButton = ({ text, onPress }) => (
 );
 
 ClearButton.propTypes = {
+  text: PropTypes.string,
   onPress: PropTypes.func,
-  text: PropTypes.string
 };
 
 export default ClearButton;

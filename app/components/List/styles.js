@@ -6,33 +6,33 @@ export default EStyleSheet.create({
   row: {
     paddingHorizontal: 20,
     paddingVertical: 16,
-    flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: '$white'
+    flexDirection: 'row',
+    backgroundColor: '$white',
   },
   text: {
-    fontSize: 16,
     color: '$darkText',
+    fontSize: 16,
   },
-  seperator: {
-    marginLeft: 20,
+  separator: {
     backgroundColor: '$border',
-    flex: 1,
     height: StyleSheet.hairlineWidth,
+    flex: 1,
+    marginLeft: 20,
   },
   icon: {
     backgroundColor: 'transparent',
+    borderRadius: 15,
     width: 30,
     height: 30,
-    borderRadius: 15,
     alignItems: 'center',
     justifyContent: 'center',
   },
   iconVisible: {
-    backgroundColor: '$primaryBlue'
+    backgroundColor: '$primaryBlue',
   },
   checkIcon: {
-    width: 18
+    width: 18,
   },
 });
