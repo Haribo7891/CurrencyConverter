@@ -1,7 +1,11 @@
 {
   "expo": {
+    "name": "Currency Converter",
+    "description": "A React Native currency converter app using the fixer.io API for up-to-date conversions.",
     "sdkVersion": "25.0.0",
     "orientation": "portrait",
-    "privacy": "public"
+    "privacy": "public",
+    "slug": "expo.io/@haribo7891/currencyconverter",
+    "githubUrl": "https://github.com/Haribo7891/CurrencyConverter"
   }
 }
