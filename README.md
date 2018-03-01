@@ -1,6 +1,6 @@
 # Currency Converter
 
-An app to show currency conversions from a list of world currencies using the [fixer.io](http://fixer.io "Fixer.io Homepage") API. This has been deployed to [expo](https://exp.host/@haribo7891/currencyconverter "Link to Expo App").
+An app to show currency conversions from a list of world currencies using the [fixer.io](http://fixer.io "Fixer.io Homepage") API. This has been deployed to [expo](https://expo.io/@haribo7891/currency-converter "Link to Expo App").
 
 ___
 
